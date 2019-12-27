@@ -20,6 +20,15 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
+        <ImageView
+            android:id="@+id/ivsetting"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_settings" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,9 +39,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/profil"
                 android:layout_centerHorizontal="true"
-                android:elevation="1dp"
-                app:civ_border_width="3px"
-                app:civ_border_color="@color/endblue">
+                android:elevation="1dp">
             </ImageView>
 
             <LinearLayout
@@ -79,7 +86,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
-                            android:text="Teknik Informatika ITN MALANG"
+                            android:text="@string/jurusan"
                             android:textAlignment="center"
                             android:textSize="15sp"
                             android:textStyle="bold"></TextView>
@@ -89,7 +96,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:text="Malang, Jawa Timur"
+                            android:text="@string/alamat"
                             android:textSize="18sp"
                             android:textStyle="bold"></TextView>
                     </LinearLayout>
@@ -125,7 +132,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#FFFFFF"
-                            android:text="Followers"
+                            android:text="@string/followers"
                             android:textSize="20sp"/>
                     </LinearLayout>
 
@@ -151,7 +158,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:textColor="#FFFFFF"
-                            android:text="Following"
+                            android:text="@string/following"
                             android:textSize="20sp"/>
 
                     </LinearLayout>
@@ -168,8 +175,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="480dp"
-            app:cardCornerRadius="10dp"
+            android:layout_marginTop="630dp"
+            app:cardCornerRadius="5dp"
             app:contentPaddingBottom="15dp"
             app:contentPaddingLeft="15dp"
             app:contentPaddingRight="15dp"
@@ -179,8 +186,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Social Media"
-                android:textSize="15sp"
+                android:text="@string/sosmed"
+                android:textSize="20sp"
                 android:textStyle="bold"></TextView>
 
             <LinearLayout
